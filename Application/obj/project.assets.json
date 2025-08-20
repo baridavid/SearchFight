@@ -5,10 +5,14 @@
       "FluentValidation/10.3.6": {
         "type": "package",
         "compile": {
-          "lib/net5.0/FluentValidation.dll": {}
+          "lib/net5.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/net5.0/FluentValidation.dll": {}
+          "lib/net5.0/FluentValidation.dll": {
+            "related": ".xml"
+          }
         }
       },
       "FluentValidation.DependencyInjectionExtensions/10.3.6": {
@@ -18,10 +22,14 @@
           "Microsoft.Extensions.Dependencyinjection.Abstractions": "2.1.0"
         },
         "compile": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {}
+          "lib/netstandard2.1/FluentValidation.DependencyInjectionExtensions.dll": {
+            "related": ".xml"
+          }
         }
       },
       "MediatR/10.0.1": {
@@ -30,19 +38,27 @@
           "MediatR.Contracts": "1.0.1"
         },
         "compile": {
-          "lib/netstandard2.1/MediatR.dll": {}
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/MediatR.dll": {}
+          "lib/netstandard2.1/MediatR.dll": {
+            "related": ".xml"
+          }
         }
       },
       "MediatR.Contracts/1.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/MediatR.Contracts.dll": {}
+          "lib/netstandard2.0/MediatR.Contracts.dll": {
+            "related": ".xml"
+          }
         }
       },
       "MediatR.Extensions.Microsoft.DependencyInjection/10.0.1": {
@@ -61,10 +77,14 @@
       "Microsoft.Extensions.DependencyInjection.Abstractions/6.0.0": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {}
+          "lib/netstandard2.1/Microsoft.Extensions.DependencyInjection.Abstractions.dll": {
+            "related": ".xml"
+          }
         },
         "build": {
           "buildTransitive/netcoreapp3.1/_._": {}
@@ -73,10 +93,14 @@
       "Newtonsoft.Json/13.0.1": {
         "type": "package",
         "compile": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         },
         "runtime": {
-          "lib/netstandard2.0/Newtonsoft.Json.dll": {}
+          "lib/netstandard2.0/Newtonsoft.Json.dll": {
+            "related": ".xml"
+          }
         }
       },
       "Domain/1.0.0": {
@@ -241,19 +265,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Bari\\.nuget\\packages\\": {}
+    "C:\\Users\\barigloria\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Bari\\OneDrive\\Documents\\SearchFight\\Application\\Application.csproj",
+      "projectUniqueName": "C:\\Dev\\SearchFight\\Application\\Application.csproj",
       "projectName": "Application",
-      "projectPath": "C:\\Users\\Bari\\OneDrive\\Documents\\SearchFight\\Application\\Application.csproj",
-      "packagesPath": "C:\\Users\\Bari\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Bari\\OneDrive\\Documents\\SearchFight\\Application\\obj\\",
+      "projectPath": "C:\\Dev\\SearchFight\\Application\\Application.csproj",
+      "packagesPath": "C:\\Users\\barigloria\\.nuget\\packages\\",
+      "outputPath": "C:\\Dev\\SearchFight\\Application\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Bari\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\barigloria\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -267,8 +296,8 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "projectReferences": {
-            "C:\\Users\\Bari\\OneDrive\\Documents\\SearchFight\\Domain\\Domain.csproj": {
-              "projectPath": "C:\\Users\\Bari\\OneDrive\\Documents\\SearchFight\\Domain\\Domain.csproj"
+            "C:\\Dev\\SearchFight\\Domain\\Domain.csproj": {
+              "projectPath": "C:\\Dev\\SearchFight\\Domain\\Domain.csproj"
             }
           }
         }
@@ -277,7 +306,13 @@
         "warnAsError": [
           "NU1605"
         ]
-      }
+      },
+      "restoreAuditProperties": {
+        "enableAudit": "true",
+        "auditLevel": "low",
+        "auditMode": "direct"
+      },
+      "SdkAnalysisLevel": "9.0.300"
     },
     "frameworks": {
       "net5.0": {
@@ -306,7 +341,8 @@
           "net47",
           "net471",
           "net472",
-          "net48"
+          "net48",
+          "net481"
         ],
         "assetTargetFallback": true,
         "warn": true,
@@ -315,7 +351,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.200-preview.22055.15\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
